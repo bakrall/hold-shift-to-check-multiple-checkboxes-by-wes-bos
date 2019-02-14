@@ -15,6 +15,10 @@ function handleCheck(e) {
 				//then when the second of them is met, inBetween is again set to false
 				inBetween = !inBetween;
 			}
+			// if checkbox is not 'this' or 'lastChecked', but is between them, check it
+			if (inBetween) {
+				checkbox.checked = true;
+			}
 		});
 	}
 	
